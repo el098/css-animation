@@ -1,0 +1,78 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fdf6ff;
+    text-align: center;
+}
+
+/* Fade-in animation for page load */
+.fade-in {
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header */
+.header {
+    padding: 40px 20px;
+    background: #b89de4;
+}
+
+/* Cards */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    width: 150px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+/* Hover animations */
+.hover-grow:hover {
+    transform: scale(1.1);
+}
+
+.hover-rotate:hover {
+    transform: rotate(8deg);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 20px #d8b4fe;
+}
+
+/* Bouncing button */
+.bounce-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #d8b4fe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
